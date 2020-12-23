@@ -1,0 +1,142 @@
+// subpage
+
+body.sub{
+  .container{
+    .row{
+      .col_12{
+        .card{
+          border: none;
+          h1{
+            color: $fontColorPrimary;
+            font-weight: bold;
+            font-size: 30px;
+            &.white-text{
+              color: #fff;
+            }
+            &.black-text{
+              color: $fontColorPrimary;
+            }
+            &.big{
+              font-size: 50px;
+            }
+          }
+          .card-img-overlay.card-bottom.less-padding{
+            padding: 125px 0;
+          }
+          .card-img-overlay.card-bottom{
+            padding: 400px 0;
+          }
+        }
+        .container{
+          padding: 0;
+          .row{
+            margin: 0;
+            .col_6{
+              .table{
+                margin: 0 auto;
+                background-color: #fff;
+                opacity: .8;
+                color: $fontColorPrimary;
+                td,th{
+                  border-color: $gbtnColorPrimary;
+                }
+                caption{
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+      .col_3{
+        .card{
+          width: 100%;
+          border: 0;
+          margin: 50px 0;
+          img{
+            width: 40%;
+            margin: 20px auto 0;
+          }
+          .card-text{
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and ( max-width: 1200px){
+  body.sub{
+    .container{
+      .row{
+        .col_12{
+          .card{
+            .card-img-overlay.card-bottom.less-padding{
+              padding: 65px 0;
+            }
+            .card-img-overlay.card-bottom {
+              padding: 200px 0;
+            }
+            h1{
+              &.big{
+                font-size: $fontSizeBig;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and ( max-width: 991px){
+  body.sub{
+    .container{
+      .row{
+        .col_12{
+          .card{
+            img.table-img{
+              height: 700px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:767px){
+  body.sub{
+    .container{
+      .row{
+        .col_12{
+          .card{
+            img.table-img{
+              height: 600px;
+            }
+            .card-img-overlay{
+              &.card-bottom{
+                padding: 120px 0;
+                h1{
+                  font-size: 21px;
+                }
+              }
+            }
+            h1{
+              &.big{
+                font-size: $fontSizePrimary;
+              }
+            }
+            .container{
+              .row{
+                .col_6{
+                  width: 80%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

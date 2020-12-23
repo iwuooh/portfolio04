@@ -1,0 +1,10 @@
+// initial
+ul,li{ list-style: none; list-style-type: none;}
+a{ text-decoration: none; color: $fontColorPrimary;}
+body{
+  max-width: 1920px;
+  min-width: 767px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
